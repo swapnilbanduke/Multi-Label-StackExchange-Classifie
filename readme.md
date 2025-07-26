@@ -1,6 +1,6 @@
 # 🏷️ Gemma + QLoRA Multi‑Label StackExchange Classifier
 
-Fine‑tuned **Gemma 7B Instruction** with **QLoRA** and 4‑bit quantization to automatically tag StackExchange questions with all relevant topics.  
+Fine‑tuned **Gemma 2B Instruction** with **QLoRA** and 4‑bit quantization to automatically tag StackExchange questions with all relevant topics.  
 The model delivers high accuracy while cutting GPU memory usage in half, making large‑model multi‑label classification feasible on a single consumer GPU.
 
 ---
@@ -34,7 +34,7 @@ The model delivers high accuracy while cutting GPU memory usage in half, making 
 - **Pre‑processing**:  
   1. Filtered English‑language questions with ≥1 accepted answer  
   2. Kept questions with ≤6 tags (multi‑label)  
-  3. Tokenized titles + bodies using `AutoTokenizer.from_pretrained("google/gemma-7b-it")`  
+  3. Tokenized titles + bodies using `AutoTokenizer.from_pretrained("google/gemma-2b-it")`  
 - **Train / Val / Test**: 80 % / 10 % / 10 %
 
 ---
